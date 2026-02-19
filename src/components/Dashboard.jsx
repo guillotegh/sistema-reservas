@@ -67,7 +67,6 @@ export default function Dashboard({ session }) {
     };
 
     const addReserva = async (reservaData) => {
-        console.log("Saving reserva...", reservaData);
         try {
             const { data, error } = await supabase
                 .from('reservas')
